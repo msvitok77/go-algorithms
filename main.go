@@ -33,6 +33,8 @@ func (u *UnionFind) Union(a, b uint64) {
 	a = u.Find(a)
 	b = u.Find(b)
 
+	// TODO ranks
+
 	u.parents[b] = a
 }
 
